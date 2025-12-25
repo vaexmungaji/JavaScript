@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com JavaScript</title>
+    <style>
+        body{
+            text-align: center;
+            height: 100vh;
+            padding: 0px;
+            /*display: flex;
+            align-items: center;
+            justify-content: center;
+            */
+        }
+        h1{
+            margin-top: 50px;
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            margin: 50px 80px 0px  ;
+        }
+        button{
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+            width: 200px;
+            height: 50px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 15px;
+            border:none;
+            box-shadow: -1px 6px 13px -9px black;
+            background-color: #39f30a56;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+        }
+        button:hover{
+            box-shadow: 8px 9px 22px -7px  black;
+            background-color: #39f30a56;
+        }
+        #txtTeste{
+            display: block;
+            margin: auto;
+            font-size: 26px;
+            padding: 10px;
+        }
+        #item{
+            position: relative;
+            top: 200px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body onload="modificar()" onresize="resiz()">
+    <h1>Eventos em JavaScript</h1>
+    <select name="" id="item" onchange="mudou()">Valores
+        <option value="valor1">Valor1</option>
+        <option value="valor1">Valor2</option>
+        <option value="valor1">Valor3</option>
+        <option value="valor1">Valor4</option>
+    </select>
+    <div>
+        <button onclick="eventoclick()" class="btn" id="btnclick">Evento Click</button>
+
+        <button onmouseover="eventomauseover()" onmouseout="mouseout()" id="btnover" class="btn">Evento Over & MouseUp</button>
+    </div>
+    <div>
+        <button id="btnmousedown">Evento mousedown</button>
+        <button id="btnmousemove">Evento MouseMove</button>
+     </div>
+
+     <input type="text" placeholder="Digite alguma coisa" id="txtTeste">
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
