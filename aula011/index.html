@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas em JavaScript</title>
+</head>
+<body>
+    <h1>Datas em JavaScript</h1>
+    <script>
+        // Criando uma data específica: 25 de dezembro de 2023
+        const dataEspecifica = new Date(2023, 11, 25); // Mês é 0-indexado (0 = janeiro, 11 = dezembro)
+        console.log("Data específica:", dataEspecifica.toString());
+
+        // Obtendo a data e hora atual
+        const dataAtual = new Date();
+        console.log("Data e hora atual:", dataAtual.toString());
+
+        // Extraindo componentes da data atual
+        const ano = dataAtual.getFullYear();
+        const mes = dataAtual.getMonth() + 1; // Adiciona 1 para ajustar o índice do mês
+        const dia = dataAtual.getDate();
+        const horas = dataAtual.getHours();
+        const minutos = dataAtual.getMinutes();
+        const segundos = dataAtual.getSeconds();
+
+        console.log(`Ano: ${ano}, Mês: ${mes}, Dia: ${dia}`);
+        console.log(`Horas: ${horas}, Minutos: ${minutos}, Segundos: ${segundos}`);
+
+        // Formatando a data em uma string legível
+        const dataFormatada = `${dia}/${mes}/${ano} ${horas}:${minutos}:${segundos}`;
+        console.log("Data formatada:", dataFormatada);
+</body>
+</html>
