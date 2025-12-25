@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de Tempo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        #contador,#contador1 {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            height: 60px;
+        }
+        #btnIniciar {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        #btnParar {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+        #btnIniciar1 {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+        }
+        #btnParar1 {
+            background-color: #e7e7e7;
+            color: black;
+            border: none;
+        }
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Controle de tempo</h1>
+    <h2>Usando #SetTimeout</h2>
+    <p id="contador">0</p>    
+    <button id="btnIniciar">Iniciar Contagem</button>
+    <button id="btnParar">Parar Contagem</button>
+<div>
+        <h2>Usando #SetInterval</h2>
+        <p id="contador1">0</p>
+        <button id="btnIniciar1">Iniciar Contagem</button>
+        <button id="btnParar1">Parar Contagem</button>
+</div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
