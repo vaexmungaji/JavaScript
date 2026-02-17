@@ -3,7 +3,7 @@ const iniciar = document.getElementById('btnIniciar');
 const parar = document.getElementById('btnParar');
 const contador = document.getElementById('contador');
 
-iniciar.addEventListener('mousemove', function() {
+iniciar.addEventListener('click', function() {
 
     tempo=setTimeout(() => 
         {
@@ -23,6 +23,7 @@ const iniciar1 = document.getElementById('btnIniciar1');
 const parar1 = document.getElementById('btnParar1');
 const contador1 = document.getElementById('contador1');
 let intervalo;
+
 iniciar1.addEventListener('click', function() {
     intervalo = setInterval(() => {
         var cromometro = parseInt(contador1.innerText);
